@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/PI-PET-configurado/Imagens/bg.png);
+    background-size:cover;
+    width: auto;
+    height: auto;
+}
+
+.centro {
+    display: flex;
+    width: 35vw;
+    height: 650px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #87d0da;
+    font-family: Trebuchet MS, sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 5px #619aa1;
+    opacity: 90%;
+}
+
+.titu {
+    display: flex;
+    letter-spacing: 7px;
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color: white;
+}
+
+/*FOTO DO PET*/
+input[type='file']{
+    display:none;
+}
+
+#fotinho{
+    display:flex;
+    max-width:130px;
+    max-height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    box-shadow: 2px 5px #619aa1;
+    cursor: pointer;
+    transition: background .3s;
+    }
+    
+#fotinho:hover{
+    background-color: #3f6166;
+}
+
+/*AREA DO FORMULARIO*/
+
+.frm{
+    display: inline-block;
+    border: 1px solid red;
+    margin-right: 60%;
+}
+
+.lblfrm{
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lblpl{
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+.formdiv-area {
+    padding:2px 0;
+}
+
+/*INPUT DO FORMULARIO*/
+.formdiv-area input {
+    border:3px solid #44b3c4;
+}
+
+
+.formu{
+    display: block;
+    width: 95%;
+    height: 70px;
+    padding: 20px 5px;
+    margin: 5px;
+}
+
+.formu > input{
+    border:3px solid #44b3c4;
+    outline: none;
+    width: 95%;
+    margin-top: 5px;
+}
+
+/*BOTOES FINAL FORMULARIO*/
+
+.botoes {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.botoes input[type=submit] {
+    margin-top:5px;
+    margin-left:32%;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+    border-radius: 5em;
+    border: none;
+    background-color: Teal;
+    color: #fff;
+    width: 35%;  height: 3em;
+    text-transform: uppercase;
+    cursor:pointer;
+    box-shadow: 1px 2px #000000;
+}
+
+.botoes input[type=reset] {
+    margin-left:40%;
+    margin-top:1%;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+    border-radius: 5em;
+    border: none;
+    background-color: Teal;
+    color: #fff;
+    width: 20%;  height: 2em;
+    text-transform: uppercase;
+    cursor:pointer;
+    box-shadow: 1px 2px #000000;
+}
+
+
+@media (max-width: 700px) {
+}

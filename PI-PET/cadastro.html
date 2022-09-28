@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>PETLOVZ</title>
+</head>
+
+<body>
+    <main class="centro">
+        
+        <div class="titu">
+            CADASTRO
+        </div>
+        <img src="imagens/camera.png" alt="Selecione uma imagem" id="fotinho">
+            <input type="file" id="flImage" name="flImage" accept="image/*">
+            <script src="CSS/style.css"></script>
+
+        <form id="formu" class="formu" method="post">
+            <label class='lblfrm'>Nome do PET</label>
+                <input id='nomepet' type='text' name='nomepet' maxlength='20' placeholder="COMO SE CHAMA O SEU PET?" required>
+        
+                <div class="formuint">
+                <label class='lblfrm'>Raça do PET</label><br>
+                <input type='radio' name='raca' value='SRD'><label class='lblpl'>SRD</label>
+                <input type='radio' name='raca' value=  ><label class='lblpl'>OUTRO </label><input id='raca' type='text' name='raca' maxlength='20' placeholder="DIGITE A RAÇA DO SEU PET" >
+                </div>
+        
+                <div class="formuint">    
+                    <label class='lblfrm'>Sexo do PET</label><br>
+                    <input type='radio' name='sexo' value='MACHO'>
+                    <label class='lblpl'>Macho</label>
+                    <input type='radio' name='sexo' value='FEMEA'>
+                    <label class='lblpl'>Fêmea</label>
+                </div>
+
+                <label class='lblfrm'>Data de Nascimento do PET</label>
+                <input id='dtnasc' type='date' name='dtnasc'>
+
+                <label class="lblfrm">Nome Completo do Dono</label>
+                <input id="nomedono" type='text' name='nomedono' maxlength='40' placeholder="RESPONSÁVEL PELO PET" required>
+                    
+                <label class="lblfrm">Email</label><br>
+                <input id="email" type="email" name="email" maxlength="50" placeholder="INSIRA SEU E-MAIL" required>
+                    
+                <label class="lblfrm">Senha</label><br>
+                <input id="password" type="password" name="password" maxlength="40" placeholder="INSIRA SUA SENHA" required>
+                    
+
+                <div class="botoes">
+                    <input type='submit' value="Criar Conta" >
+                    <input type='reset' value="Limpar">                    
+                </div>
+                
+        </form>
+        
+    </main>
+        
+</body>
+
+<!--Importações do Firebase-->    
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>        
+
+<!-- Importações de arquivos -->
+<script src="JS/app.js"></script>
+<script src="JS/email.js"></script>
+<script src="JS/database.js"></script>
+<script src="JS/facebook.js"></script>
+<script src="JS/github.js"></script>
+<script src="JS/google.js"></script>
+</html>

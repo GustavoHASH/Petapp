@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carteirinha</title>
+  <link rel="stylesheet" href="CSS/style2.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h3>Anota ai</h3>
+    </header>
+    <div class="table-wrapper">
+      <table class="table-users">
+        <tr>
+          <th>Veterinario</th>
+          <th>Nome da Vacina</th>
+          <th>DD/MM/YYYY</th>
+          <th>Observações</th>
+          <th></th> 
+        </tr>
+      </table>
+      <button class="btn btn-add">Adicionar Vacina</button>
+    </div>
+    <!-- Add Modal -->
+    <div class="add-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Nova Vacina</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="firstName" placeholder="Veterinario">
+            <input type="text" name="lastName" placeholder="Nome da Vacina">
+            <input type="date" name="phone" placeholder="Data">
+            <input type="email" name="email" placeholder="Observações">
+            <button class="btn btn-modal">Adicionar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Edit User</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="firstName" placeholder="First Name">
+            <input type="text" name="lastName" placeholder="Last Name">
+            <input type="number" name="phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+     apiKey: "AIzaSyDGy_piMavyzbsobNUjUoVvzZ-R7i64Lcs",
+    authDomain: "carteira-pet.firebaseapp.com",
+    databaseURL: "https://carteira-pet-default-rtdb.firebaseio.com",
+    projectId: "carteira-pet",
+    storageBucket: "carteira-pet.appspot.com",
+    messagingSenderId: "789453291469",
+    appId: "1:789453291469:web:9fee0d3a70469d5d2bce84",
+    measurementId: "G-JCNXQCW29S"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="JS/script2.js"></script>
+</body>
+</html>
